@@ -1,0 +1,51 @@
+Query-------
+
+1. 
+
+2.
+
+3. select * from customer;
+
+4. SELECT cust_ID, phone_no FROM Customer WHERE cust_name like 'Ravi%';
+
+5. SELECT br_address FROM Branch WHERE br_id = 'br_01';
+
+6. SELECT * FROM Customer WHERE cust_ID = 103;
+ 
+7. SELECT * FROM Account WHERE balance > 10000;
+
+8. SELECT * FROM Account WHERE br_id = 'br_02';
+
+9. SELECT * FROM Loan WHERE br_id = 'br_01';
+
+10. SELECT A.*, B.br_address 
+    FROM Account A 
+    JOIN Branch B ON A.br_id = B.br_id; 
+
+11. SELECT C.*, A.* 
+    FROM Customer C
+    JOIN Customer_Account CA ON C.cust_ID = CA.cust_ID
+    JOIN Account A ON CA.acc_no = A.acc_no;
+
+12.
+
+13.
+
+14.SELECT DISTINCT B.br_name 
+    FROM Account A
+    JOIN Branch B ON A.br_id = B.br_id;
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+
+
